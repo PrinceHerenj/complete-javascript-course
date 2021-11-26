@@ -111,4 +111,18 @@ const language = 'Hindi'
 
 // console.log(`${country}'s population is ${population > 33 ?`above`: `below`} average`);
 
-1 + 3
+// const age = 19
+// age >= 18 ? console.log(`Can Chug`) : console.log(`No`)
+// const drink = age >= 18 ? `wine` : `water`
+// console.log(drink)
+
+// let drink2;
+// if (age >= 18) {
+//     drink2 = `wine`
+// } else {
+//     drink2 = `water`
+// }
+
+// console.log(drink2)
+
+// console.log(`I'd like to drink ${age >= 18 ? `wine` : `water`}`)
