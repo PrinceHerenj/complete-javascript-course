@@ -9,5 +9,4 @@
 // const interface = `Audio`
 // const private = 534
 
-const hello = `String here!`
-
+const hello = `String here changed`
