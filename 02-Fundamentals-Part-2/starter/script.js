@@ -9,4 +9,16 @@
 // const interface = `Audio`
 // const private = 534
 
-const hello = `String here changed again`
+// function logger() {
+//     console.log(`My name is Prince`)
+// }
+// logger()
+
+// function fruitProcessor(apples, oranges) {
+//     const juice = `Juice with ${apples} apples and ${oranges} oranges`
+//     return juice;
+// }
+
+// console.log(fruitProcessor(5, 0))
+// console.log(fruitProcessor(12, 4))
+
