@@ -22,3 +22,6 @@
 // console.log(fruitProcessor(5, 0))
 // console.log(fruitProcessor(12, 4))
 
+const a = function (x) {
+    return x ** 2
+}
