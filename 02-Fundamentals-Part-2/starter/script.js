@@ -14,6 +14,7 @@
 // }
 // logger()
 
+// function declarations
 // function fruitProcessor(apples, oranges) {
 //     const juice = `Juice with ${apples} apples and ${oranges} oranges`
 //     return juice;
@@ -22,6 +23,26 @@
 // console.log(fruitProcessor(5, 0))
 // console.log(fruitProcessor(12, 4))
 
-const a = function (x) {
-    return x ** 2
+// anonymous function expression
+// const a = function (x) {
+//     return x ** 2
+// }
+
+// *declarations are hoisted to the top of the code*
+
+// arrow function
+
+// const calcAge2 = function (birthYear) {
+//     return 2037 = birthYear
+// }
+
+// const calcAge3 = birthYear => 2021 - birthYear
+// console.log(calcAge3(2002))
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2021 - birthYear;
+    const retirement = 65 - age;
+    return `${firstName} retires in ${retirement} years`
 }
+console.log(yearsUntilRetirement(2002, `Jonas`))
+console.log(yearsUntilRetirement(1998, `Prashant`))
