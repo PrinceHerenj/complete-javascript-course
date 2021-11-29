@@ -221,6 +221,7 @@ const reps = [
 ]
 
 for(let i = 0; i < reps.length; i++) {
+    console.log(`Set ${i+1}`)
     for(let j = 0; j < reps[i].length; j++) {
         console.log(reps[i][j])
     }
