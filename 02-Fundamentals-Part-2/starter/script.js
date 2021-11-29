@@ -165,3 +165,64 @@
 // jonas.calcAge()
 // console.log(jonas.summary())
 
+// looping
+
+// for(let rep = 1; rep <= 5; rep++) {
+//     console.log(`Lifting weights Repition ${rep}`)
+// }
+
+const jonasArray = [
+    `Jonas`,
+    `Schemdtmann`,
+    19,
+    `teacher`,
+    [`Michael`, `Peter`, `Steven`]
+]
+// const types = []
+
+// for(let i = 0; i < jonasArray.length; ++i) {
+//     console.log(jonasArray[i],)
+//     types.push(typeof jonasArray[i])
+// }
+
+// console.log(types)
+
+// const years = [1991, 2007, 1969, 2020]
+// const ages = []
+
+// for(let i = 0; i < years.length; ++i) {
+//     ages.push(2037 - years[i])
+// }
+
+// console.log(ages)
+
+// continue and break
+
+// for(let i = 0; i < jonasArray.length; ++i) {
+//     if(typeof jonasArray[i] !== `string`) continue
+//     console.log(jonasArray[i])
+// }
+
+// for(let i = 0; i < jonasArray.length; ++i) {
+//     if(typeof jonasArray[i] == `number`) break
+//     console.log(jonasArray[i], typeof jonasArray[i])
+// }
+
+// reverese loops
+
+for(let i = jonasArray.length - 1; i >= 0; i--) {
+    console.log(jonasArray[i])
+}
+
+const reps = [
+    [1, 2, 3, 4, 5],
+    [6, 7, 8, 9, 10],
+    [11, 12, 13, 14, 15]
+]
+
+for(let i = 0; i < reps.length; i++) {
+    for(let j = 0; j < reps[i].length; j++) {
+        console.log(reps[i][j])
+    }
+}
+
