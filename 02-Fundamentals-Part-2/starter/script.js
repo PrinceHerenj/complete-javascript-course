@@ -117,3 +117,50 @@
 // console.log(friends.indexOf(`Steven`))
 // console.log(friends.includes(`Steven`))
 
+// Objects
+
+// const jonas = {
+//     firstName: `Jonas`,
+//     lastName: `Schmedtmann`,
+//     age: 2037 - 1991,
+//     job: `teacher`,
+//     friends: [`Michael`, `Peter`, `Steven`]
+// }
+
+// console.log(jonas[`firstName`])
+
+// const nameKey = `Name`;
+// console.log(jonas[`first${nameKey}`])
+// console.log(jonas[`last${nameKey}`])
+
+// const interestedIn = prompt(`Enter to search`)
+
+// if (interestedIn) {
+    // console.log(jonas[interestedIn])
+// } else {
+//     // console.log(`Wrong Request`)
+// }
+
+// jonas.location = `Portugal`
+
+// console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}.`)
+
+const jonas = {
+    firstName: `Jonas`,
+    lastName: `Schmedtmann`,
+    birthYear: 1991,
+    job: `teacher`,
+    friends: [`Michael`, `Peter`, `Steven`],
+    hasDriversLicence: true,
+    age: NaN,
+    calcAge: function () {
+        this.age = 2037 - this.birthYear 
+        return this.age
+    },
+    summary: function () {
+        return `${this.firstName} is a ${this.age} years old ${this.job}, and he has ${this.hasDriversLicence ? `a` : `no`} driver's license!`
+    }
+}
+// don't use this keyword in arrow functions
+jonas.calcAge()
+console.log(jonas.summary())
