@@ -55,13 +55,18 @@
 
 // console.log(fruitProcessor(2, 3))
 
-const calcAge = birthYear => 2021 - birthYear
+// const calcAge = birthYear => 2021 - birthYear
 
-const yearsUntilRetirement = function(birthYear, firstName) {
-        const age = calcAge(birthYear)
-        const retirement = 65 - age;
-        return retirement > 0 ? `${firstName} retires in ${retirement} years` : `Already retired`
-}
+// const yearsUntilRetirement = function(birthYear, firstName) {
+//         const age = calcAge(birthYear)
+//         const retirement = 65 - age;
+//         return retirement > 0 ? `${firstName} retires in ${retirement} years` : `Already retired`
+// }
 
-console.log(yearsUntilRetirement(2002, `Prince`))
-console.log(yearsUntilRetirement(1970, `Mike`))
+// console.log(yearsUntilRetirement(2002, `Prince`))
+// console.log(yearsUntilRetirement(1970, `Mike`))
+
+const friend1 = `Michael`
+const friend2 = `Steven`
+const friend3 = `Peter`
+
