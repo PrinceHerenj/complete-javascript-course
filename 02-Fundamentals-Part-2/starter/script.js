@@ -66,7 +66,35 @@
 // console.log(yearsUntilRetirement(2002, `Prince`))
 // console.log(yearsUntilRetirement(1970, `Mike`))
 
-const friend1 = `Michael`
-const friend2 = `Steven`
-const friend3 = `Peter`
+// arrays
+// const friends = [`Michael`, `Steven`, `Peter`]
+// console.log(friends)
 
+// const years = new Array(1991, 1984, 2008, 2020)
+
+// console.log(years)
+// console.log(friends[0], friends[1])
+// console.log(friends.length)
+// console.log(friends[friends.length - 1]) // last element
+
+// friends[2] = `Jay`;
+// console.log(friends)
+
+// const firstName = `Jonas`
+// const jonas = [firstName, `Schmedtmann`, 2037 - 1991, `teacher`, friends]
+// console.log(jonas)
+
+
+// const calcAge = function (birthYear) {
+//     return 2037 - birthYear
+// }
+
+// const years1 = [1990, 1967, 2002, 2010, 2018]
+// let ages = []
+// years1.forEach(x)
+
+// function x(a) {
+//     ages.push(calcAge(a))
+// }
+
+// ages
