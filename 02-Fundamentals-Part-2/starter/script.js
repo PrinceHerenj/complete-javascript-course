@@ -171,13 +171,13 @@
 //     console.log(`Lifting weights Repition ${rep}`)
 // }
 
-const jonasArray = [
-    `Jonas`,
-    `Schemdtmann`,
-    19,
-    `teacher`,
-    [`Michael`, `Peter`, `Steven`]
-]
+// const jonasArray = [
+//     `Jonas`,
+//     `Schemdtmann`,
+//     19,
+//     `teacher`,
+//     [`Michael`, `Peter`, `Steven`]
+// ]
 // const types = []
 
 // for(let i = 0; i < jonasArray.length; ++i) {
@@ -210,20 +210,32 @@ const jonasArray = [
 
 // reverese loops
 
-for(let i = jonasArray.length - 1; i >= 0; i--) {
-    console.log(jonasArray[i])
-}
+// for(let i = jonasArray.length - 1; i >= 0; i--) {
+//     console.log(jonasArray[i])
+// }
 
-const reps = [
-    [1, 2, 3, 4, 5],
-    [6, 7, 8, 9, 10],
-    [11, 12, 13, 14, 15]
-]
+// const reps = [
+//     [1, 2, 3, 4, 5],
+//     [6, 7, 8, 9, 10],
+//     [11, 12, 13, 14, 15]
+// ]
 
-for(let i = 0; i < reps.length; i++) {
-    console.log(`Set ${i+1}`)
-    for(let j = 0; j < reps[i].length; j++) {
-        console.log(reps[i][j])
-    }
-}
+// for(let i = 0; i < reps.length; i++) {
+//     console.log(`Set ${i+1}`)
+//     for(let j = 0; j < reps[i].length; j++) {
+//         console.log(reps[i][j])
+//     }
+// }
 
+// let rep = 1
+// while (rep <= 10) {
+//     console.log(`Rep ${rep}`)
+//     rep++
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1
+// while(dice !== 6) {
+//     console.log(`You rolled a ${dice}`)
+//     dice = Math.trunc(Math.random() * 6) + 1
+// }
+// console.log(`Congrats! You rolled a 6`)
