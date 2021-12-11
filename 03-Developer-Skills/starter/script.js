@@ -9,3 +9,5 @@ const calcAge = birthyear => 2037 - birthyear;
 
 console.log(calcAge(2021));
 console.log(x);
+
+// console.log;
