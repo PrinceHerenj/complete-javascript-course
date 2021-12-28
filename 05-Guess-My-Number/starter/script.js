@@ -15,21 +15,13 @@ document.querySelector(`.check`).addEventListener(`click`, function () {
     document.querySelector(`.number`).textContent = secretNumber;
     document.querySelector(`.number`).style.width = `30rem`;
     updateHighscore(score);
-  } else if (guess > secretNumber) {
+  } else if (guess !== secretNumber) {
     if (score > 1) {
-      document.querySelector(`.message`).textContent = `Too High!`;
+      document.querySelector(`.message`).textContent =
+        guess > secretNumber ? `Too High!` : `Too Low!`;
       score--;
       document.querySelector(`.score`).innerHTML = score;
       document.querySelector(`body`).style.backgroundColor = `#222`;
-    } else {
-      document.querySelector(`.message`).textContent = `You lost the game!`;
-      document.querySelector(`.score`).innerHTML = 0;
-    }
-  } else if (guess < secretNumber) {
-    if (score > 1) {
-      document.querySelector(`.message`).textContent = `Too Low!`;
-      score--;
-      document.querySelector(`.score`).innerHTML = score;
     } else {
       document.querySelector(`.message`).textContent = `You lost the game!`;
       document.querySelector(`.score`).innerHTML = 0;
