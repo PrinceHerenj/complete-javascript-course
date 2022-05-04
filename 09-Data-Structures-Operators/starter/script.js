@@ -26,4 +26,58 @@ const restaurant = {
       close: 24,
     },
   },
+  order: function (starterIndex, mainIndex) {
+    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+  },
+  orderDelivery: function ({
+    starterIndex: starter = 1,
+    mainIndex: main = 0,
+    time = `22: 20`,
+    address = `NaN`,
+  }) {
+    console.log(
+      `Order received!, ${this.starterMenu[starter]} and ${this.mainMenu[main]} will be delivered to ${address}; 30 minutes from ${time} `
+    );
+  },
 };
+
+// // array destructuring
+// let [main, secondary] = restaurant.categories;
+// console.log(main, secondary);
+
+// // swapping
+// [main, secondary] = [secondary, main];
+// console.log(main, secondary);
+
+// // array destructuring from function
+// let [starter, main] = restaurant.order(2, 0);
+// console.log(starter, main);
+
+// // nester array destructuring
+// const nested = [2, 4, [5, 6]];
+// const [i, , [j, k]] = nested;
+// console.log(i, j, k);
+
+// // assigning default values
+// const [a, b, c = 12] = [8, 9];
+// console.log(a, b, c);
+
+///// ///// ///// /////
+
+// // object destructuring
+// const { name, categories, openingHours } = restaurant;
+// console.log(name, categories, openingHours);
+
+// // object name change
+// const {
+//   name: restaurantName,
+//   categories: tags,
+//   openingHours: hours,
+// } = restaurant;
+// console.log(restaurantName, tags, hours);
+
+// // setting up default values
+// const { starterMenu: menu = [] } = restaurant; // default value loaded if parent objects
+// console.log(menu);
+
+// mutating variables while destructuring
