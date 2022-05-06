@@ -39,9 +39,18 @@ const restaurant = {
       `Order received!, ${this.starterMenu[starter]} and ${this.mainMenu[main]} will be delivered to ${address}; 30 minutes from ${time} `
     );
   },
+  orderPasta: (ing1, ing2, ing3) => {
+    console.log(
+      `Your pasta will be delivered with ${ing1}, ${ing2} and ${ing3}`
+    );
+  },
+  orderPizza: (mainIngredient, ...otherIngredients) => {
+    console.log(`Main Ingredient: ` + mainIngredient);
+    console.log(`Other Ingredients: ` + otherIngredients);
+  },
 };
 
-// // array destructuring
+// // ARRAY DESTRUCTURING
 // let [main, secondary] = restaurant.categories;
 // console.log(main, secondary);
 
@@ -64,7 +73,7 @@ const restaurant = {
 
 ///// ///// ///// /////
 
-// // object destructuring
+// // OBJECT DESTRCUTURING
 // const { name, categories, openingHours } = restaurant;
 // console.log(name, categories, openingHours);
 
@@ -80,4 +89,154 @@ const restaurant = {
 // const { starterMenu: menu = [] } = restaurant; // default value loaded if parent objects
 // console.log(menu);
 
-// mutating variables while destructuring
+// // mutating variables while destructuring
+// let a = 111;
+// let b = 222;
+// const obj = { a: 23, b: 7, c: 14 };
+// ({ a, b } = obj);
+// console.log(a, b);
+
+// // nested object destructuring
+// const {
+//   fri: { open: o, close: c },
+// } = restaurant.openingHours;
+// console.log(o, c);
+
+// // LIVE usage
+// restaurant.orderDelivery({
+//   starterIndex: 1,
+//   mainIndex: 1,
+//   time: '22:30',
+//   address: 'Kanke, RNC,JH',
+// });
+
+///// ///// ///// /////
+
+// // SPREAD OPERATOR
+// const arr = [7, 8, 9];
+// const badNewArray = [1, 2, arr[0], arr[1], arr[2]];
+// console.log(badNewArray);
+// const goodNewArray = [1, 2, ...arr];
+// console.log(goodNewArray);
+// const newMenu = [...restaurant.mainMenu, 'Gnocci'];
+// console.log(newMenu);
+
+// // uses
+// // 1. create shallow copies of array
+// const arrayDefined = [5, 4, 3, 2, 1];
+// const arrayShallow = [...arrayDefined];
+// console.log(arrayDefined, arrayShallow);
+// // 2. merging two arrays
+// const arrayJoined = [...arrayDefined, ...arrayShallow.reverse()];
+// console.log(arrayJoined);
+
+// ITERABLES: arrays, strings, maps, sets, NOT objects
+// // LIVE usage
+// const ingredients = [
+//   prompt(`Let's make Pasta!
+// Ingredient 1?`),
+//   prompt(`Ingredient 2?`),
+//   prompt(`Ingredient 3?`),
+// ];
+// restaurant.orderPasta(...ingredients);
+
+// ES2k18 allows object spreading
+// const newRestaurant = { ...restaurant, founder: 'Guiseppe' };
+// // also shallow copying of objects
+// const newRestaurant1 = { ...restaurant };
+// console.log(newRestaurant1);
+
+///// ///// ///// /////
+
+// // REST PATTERNS
+// const arr = [1, 2, ...[3, 4]];
+// const [, ...others] = [1, 2, 3, 4, 5];
+// console.log(others);
+
+// const [Pizza, , Risotto, ...otherFood] = [
+//   ...restaurant.mainMenu,
+//   ...restaurant.starterMenu,
+// ];
+// // only one REST element, REST is last element
+
+// // REST in object Destructuring
+// const { sat, ...weekdays } = restaurant.openingHours;
+// console.log(weekdays);
+
+// // REST in function Destructuring
+// const add = function (...x) {
+//   let sum = 0;
+//   x.forEach(el => {
+//     sum += el;
+//   });
+//   console.log(sum);
+// };
+
+// add(2, 3);
+// const x = [23, 5, 7];
+// add(...x);
+// add(4, 5, 25);
+
+// restaurant.orderPizza('Mushrooms', `Onion`, `Cheese`);
+
+///// ///// ///// /////
+
+// // && and || usage
+// Logical Operators properties: use and return any Data Type and also short circuiting
+
+// console.log(`Jonas` || 3);
+// console.log(`` || `Jonas`);
+// console.log(true || 0);
+// console.log(undefined || null);
+// console.log(undefined || 0 || `` || `Hello` || 23);
+
+// // restaurant.numGuests = 23;
+// const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+// console.log(guests1);
+// const guests2 = restaurant.numGuests || 10;
+// console.log(guests2);
+
+/*0 causes error in short circuiting*/
+
+// console.log(0 && `Jonas`);
+// console.log(`` && `Jonas`);
+// console.log(`Hello` && 23 && null && `Jonas`);
+
+/*
+|| checks for first truthy value and exits-and-returns at that truthy value
+&& checks for falsy value and exits-and-returns at that falsy value*/
+
+// if (restaurant.orderPizza) {
+//   restaurant.orderPizza(`Mushrooms`, `Spinach`);
+// }
+
+// restaurant.orderPizza && restaurant.orderPizza(`Mushrooms`, `Spinach`);
+
+///// ///// ///// /////
+
+// // Nullish Coalesing Operator ??
+// Nullish: null and undefined(NOT 0 or ``)
+// restaurant.numGuest = 0;
+// const guestCorrect = restaurant.numGuest ?? 10;
+// console.log(guestCorrect);
+
+///// ///// ///// /////
+
+// // Logical Assignment operator
+// const rest1 = {
+//   name: `Capri`,
+//   numGuests: 0,
+// };
+
+// const rest2 = {
+//   name: `La Piazza`,
+//   owner: `Giovanni Rossi`,
+// };
+
+// rest1.numGuests ??= 10;
+// rest2.numGuests ||= 10;
+// // ||= used to assign if value not present;
+
+// rest1.owner &&= `<ANONYMOUS>`;
+// rest2.owner &&= `<ANONYMOUS>`;
+// // &&= assign if value already present
