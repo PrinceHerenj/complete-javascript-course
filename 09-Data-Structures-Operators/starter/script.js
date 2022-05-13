@@ -73,7 +73,7 @@ const restaurant = {
 
 ///// ///// ///// /////
 
-// // OBJECT DESTRCUTURING
+// // OBJECT DESTRUCTURING
 // const { name, categories, openingHours } = restaurant;
 // console.log(name, categories, openingHours);
 
@@ -181,7 +181,7 @@ const restaurant = {
 
 ///// ///// ///// /////
 
-// // && and || usage
+// // && AND || USAGE
 // Logical Operators properties: use and return any Data Type and also short circuiting
 
 // console.log(`Jonas` || 3);
@@ -214,7 +214,7 @@ const restaurant = {
 
 ///// ///// ///// /////
 
-// // Nullish Coalesing Operator ??
+// // NULLISH COALESING OPERATOR ??
 // Nullish: null and undefined(NOT 0 or ``)
 // restaurant.numGuest = 0;
 // const guestCorrect = restaurant.numGuest ?? 10;
@@ -222,7 +222,7 @@ const restaurant = {
 
 ///// ///// ///// /////
 
-// // Logical Assignment operator
+// // LOGICAL ASSIGNMENT OPERATOR
 // const rest1 = {
 //   name: `Capri`,
 //   numGuests: 0,
@@ -243,16 +243,18 @@ const restaurant = {
 
 ///// ///// ///// /////
 
-// // For Of Loop for Looping
+// // FOR OF LOOP
 // const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
-// for (const l of menu) console.log(l);
+// // for (const l of menu) console.log(l);
 // for (const [index, name] of menu.entries()) {
 //   console.log(index + 1 + `: ` + name);
 // }
 
+/*Arrays have entries() return array of index and value pair */
+
 ///// ///// ///// /////
 
-// // ES6 advanced object literals
+// // ES6 ADVANCED OBJECT LITERALS
 
 // const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 
@@ -309,22 +311,46 @@ const restaurant = {
 
 ///// ///// ///// /////
 
-// Optional chaining
+// // OPTIONAL CHAINING
 
-// example 1 without optional chaining
-restaurant.openingHours.mon && console.log(restaurant.openingHours.mon.open);
-// with optional chaining
-console.log(restaurant.openingHours?.mon?.open);
-const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
-for (const day of days) {
-  const open = restaurant.openingHours[day]?.open ?? `closed`;
-  console.log(`On ${day}, we are ${open}`);
+// // example 1 without optional chaining
+// restaurant.openingHours.mon && console.log(restaurant.openingHours.mon.open);
+// // with optional chaining
+// console.log(restaurant.openingHours?.mon?.open);
+// const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+// for (const day of days) {
+//   const open = restaurant.openingHours[day]?.open ?? `closed`;
+//   console.log(`On ${day}, we are ${open}`);
+// }
+// // METHODS optional chaining
+// console.log(restaurant.order?.(0, 1) ?? `Method does not exist`);
+// console.log(restaurant.orderRisotto?.(0, 1) ?? `Method does not exist`);
+// // ARRAYS optional chaining
+// const users = [{ name: `Jonas`, email: `hello@honas.io` }];
+// console.log(users[0]?.name ?? `User array empty`);
+
+// /*Optional chaining operator often used with Nullish Coelesion operator to provide for defualt value*/
+
+///// ///// ///// /////
+// // LOOPING OBJECTS
+
+const properties = Object.keys(restaurant.openingHours);
+let openStr = `We're open on ${properties.length} days: `;
+for (const day of properties) {
+  openStr += `${day} `;
 }
-// METHODS optional chaining
-console.log(restaurant.order?.(0, 1) ?? `Method does not exist`);
-console.log(restaurant.orderRisotto?.(0, 1) ?? `Method does not exist`);
-// ARRAYS optional chaining
-const users = [{ name: `Jonas`, email: `hello@honas.io` }];
-console.log(users[0]?.name ?? `User array empty`);
+// console.log(properties);
+console.log(openStr);
+/*Object.keys() of an object returns an array of its keys*/
 
-/*Optional chaining operator often used with Nullish Coelesion operator to provide for defualt value*/
+const values = Object.values(restaurant.openingHours);
+// console.log(values);
+/*Object.values() of an object returns an of its key's values respectively*/
+
+const entries = Object.entries(restaurant.openingHours);
+// console.log(entries);
+/*Object.entries() of an object returns its key value pair as arrays in a larger parent array*/
+
+for (const [key, { open, close }] of entries) {
+  console.log(`On ${key} we open at ${open} and close at ${close} `);
+}
