@@ -62,7 +62,7 @@ const restaurant = {
 // let [starter, main] = restaurant.order(2, 0);
 // console.log(starter, main);
 
-// // nester array destructuring
+// // nested array destructuring
 // const nested = [2, 4, [5, 6]];
 // const [i, , [j, k]] = nested;
 // console.log(i, j, k);
@@ -240,3 +240,91 @@ const restaurant = {
 // rest1.owner &&= `<ANONYMOUS>`;
 // rest2.owner &&= `<ANONYMOUS>`;
 // // &&= assign if value already present
+
+///// ///// ///// /////
+
+// // For Of Loop for Looping
+// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+// for (const l of menu) console.log(l);
+// for (const [index, name] of menu.entries()) {
+//   console.log(index + 1 + `: ` + name);
+// }
+
+///// ///// ///// /////
+
+// // ES6 advanced object literals
+
+// const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+
+// const openingHour = {
+//   // using adj object literal in function
+//   [weekdays[3]]: {
+//     open: 12,
+//     close: 22,
+//   },
+//   fri: {
+//     open: 11,
+//     close: 23,
+//   },
+//   sat: {
+//     open: 0, // Open 24 hours
+//     close: 24,
+//   },
+// };
+
+// const restaurant1 = {
+//   name: 'Classico Italiano',
+//   location: 'Via Angelo Tavanti 23, Firenze, Italy',
+//   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+//   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+//   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+//   // advanced object literal
+//   openingHour,
+//   // advanced functions (direct assign function to object keys)
+//   order(starterIndex, mainIndex) {
+//     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+//   },
+//   orderDelivery({
+//     starterIndex: starter = 1,
+//     mainIndex: main = 0,
+//     time = `22: 20`,
+//     address = `NaN`,
+//   }) {
+//     console.log(
+//       `Order received!, ${this.starterMenu[starter]} and ${this.mainMenu[main]} will be delivered to ${address}; 30 minutes from ${time} `
+//     );
+//   },
+//   orderPasta(ing1, ing2, ing3) {
+//     console.log(
+//       `Your pasta will be delivered with ${ing1}, ${ing2} and ${ing3}`
+//     );
+//   },
+//   orderPizza(mainIngredient, ...otherIngredients) {
+//     console.log(`Main Ingredient: ` + mainIngredient);
+//     console.log(`Other Ingredients: ` + otherIngredients);
+//   },
+// };
+
+// console.log(restaurant1);
+
+///// ///// ///// /////
+
+// Optional chaining
+
+// example 1 without optional chaining
+restaurant.openingHours.mon && console.log(restaurant.openingHours.mon.open);
+// with optional chaining
+console.log(restaurant.openingHours?.mon?.open);
+const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+for (const day of days) {
+  const open = restaurant.openingHours[day]?.open ?? `closed`;
+  console.log(`On ${day}, we are ${open}`);
+}
+// METHODS optional chaining
+console.log(restaurant.order?.(0, 1) ?? `Method does not exist`);
+console.log(restaurant.orderRisotto?.(0, 1) ?? `Method does not exist`);
+// ARRAYS optional chaining
+const users = [{ name: `Jonas`, email: `hello@honas.io` }];
+console.log(users[0]?.name ?? `User array empty`);
+
+/*Optional chaining operator often used with Nullish Coelesion operator to provide for defualt value*/
