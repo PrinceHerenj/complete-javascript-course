@@ -1,8 +1,6 @@
 'use strict';
 
 // Data needed for a later exercise
-const flights =
-  '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
 
 // Data needed for first part of the section
 const restaurant = {
@@ -334,23 +332,269 @@ const restaurant = {
 ///// ///// ///// /////
 // // LOOPING OBJECTS
 
-const properties = Object.keys(restaurant.openingHours);
-let openStr = `We're open on ${properties.length} days: `;
-for (const day of properties) {
-  openStr += `${day} `;
-}
-// console.log(properties);
-console.log(openStr);
-/*Object.keys() of an object returns an array of its keys*/
+// const properties = Object.keys(restaurant.openingHours);
+// let openStr = `We're open on ${properties.length} days: `;
+// for (const day of properties) {
+//   openStr += `${day} `;
+// }
+// // console.log(properties);
+// console.log(openStr);
+// /*Object.keys() of an object returns an array of its keys*/
 
-const values = Object.values(restaurant.openingHours);
-// console.log(values);
-/*Object.values() of an object returns an of its key's values respectively*/
+// const values = Object.values(restaurant.openingHours);
+// // console.log(values);
+// /*Object.values() of an object returns an of its key's values respectively*/
 
-const entries = Object.entries(restaurant.openingHours);
-// console.log(entries);
-/*Object.entries() of an object returns its key value pair as arrays in a larger parent array*/
+// const entries = Object.entries(restaurant.openingHours);
+// // console.log(entries);
+// /*Object.entries() of an object returns its key value pair as arrays in a larger parent array*/
 
-for (const [key, { open, close }] of entries) {
-  console.log(`On ${key} we open at ${open} and close at ${close} `);
+// for (const [key, { open, close }] of entries) {
+//   console.log(`On ${key} we open at ${open} and close at ${close} `);
+// }
+
+///// ///// ///// /////
+// // SETS
+
+// const ordersSet = new Set([`Pasta`, `Pizza`, `Pizza`, `Risotto`, `Pizza`]);
+// console.log(ordersSet);
+
+// console.log(new Set(`Wasssssup`));
+
+// console.log(ordersSet.size); // size property
+// console.log(ordersSet.has(`Pizza`)); // includes synonymous
+// ordersSet.add(`Garlic Bread`);
+// ordersSet.add(`Garlic Bread`); // add method
+// ordersSet.delete(`Pizza`); // delete method
+// // console.log(ordersSet);
+
+// // for (const asd of ordersSet) console.log(asd);
+
+// // ordersSet.clear(); // clear all
+// // console.log(ordersSet);
+
+// const staff = [`Waiter`, `Chef`, `Waiter`, `Manager`, `Chef`, `Waiter`];
+// const staffUnique = [...new Set(staff)];
+// console.log(staffUnique);
+
+// const objectExample = {
+//   owner: `Prince Herenj`,
+//   profit: `100`,
+//   CEO: `Prince Herenj`,
+// };
+
+// console.log([...new Set(Object.values(objectExample))]); // print all unique values in object
+
+///// ///// ///// /////
+// // MAPS
+
+// const rest = new Map();
+// rest.set(`name`, `Classico Italiano`);
+// rest.set(1, `Firenze Italy`);
+// rest.set(2, `Lisbon, Protugal`);
+// rest
+//   .set(`categories`, [`Italian`, `Pizzeria`, `Vegetarian`, `Organic`])
+//   .set(`open`, 11)
+//   .set(`close`, 23)
+//   .set(true, `We are open`)
+//   .set(false, `We are closed`);
+// console.log(rest);
+
+// console.log(rest.get(1));
+
+// const time = 21;
+// console.log(rest.get(time > rest.get(`open`) && time < rest.get(`close`)));
+
+// console.log(rest.has(`categories`));
+
+// const arr = [1, 2];
+// rest.set(arr, `Test`);
+
+// rest.set(document.querySelector(`h1`), `Heading`);
+
+// console.log(rest);
+
+// // MAPS ITERATION
+
+// const questionMap = new Map([
+//   [`question`, `What is the best programming language in the world?`],
+//   [1, `C`],
+//   [2, `Java`],
+//   [3, `JavaScript`],
+//   [`correct`, 3],
+//   [true, `Correct`],
+//   [false, `Try Again`],
+// ]);
+
+// console.log(questionMap);
+
+// // OBJECT TO MAP CONVERT
+// const hoursMap = new Map(Object.entries(restaurant.openingHours));
+
+// // ITERATION
+// // QUIZ APP
+// console.log(questionMap.get(`question`));
+// for (const [key, value] of questionMap) {
+//   if (typeof key === `number`) console.log(`Option ${key}: ${value}`);
+// }
+
+// const answer = Number(prompt(`Your Answer: `));
+
+// console.log(questionMap.get(questionMap.get(`correct`) === answer));
+
+// // MAP TO ARRAY
+// console.log([...questionMap]);
+// console.log([...questionMap.keys()]);
+// console.log([...questionMap.values()]);
+// spread used to convert MAP to and array
+
+///// ///// ///// /////
+
+// // STRINGS
+
+// const airline = `TAP Air Portugal`;
+// const plane = `A320`;
+
+// console.log(...plane);
+// console.log(plane[0]);
+// console.log(`B730`[0]);
+
+// console.log(plane.length);
+
+// console.log(airline.indexOf(`r`));
+
+// console.log(airline.lastIndexOf(`r`));
+// console.log(airline.indexOf(`Portugal`));
+
+// console.log(airline.slice(4));
+// console.log(airline.slice(4, 7));
+// // length of result = end - start
+
+// console.log(airline.slice(0, airline.indexOf(` `))); // extract first word
+// console.log(airline.slice(airline.lastIndexOf(` `) + 1)); // extract last word
+// console.log(airline.slice(1, -1)); // -ve
+
+// const checkMiddleSeat = function (seat) {
+//   // B and E are middle seats
+//   if (seat.slice(-1) == `B` || seat.slice(-1) == `E`) return true;
+//   else return false;
+// };
+// // console.log(checkMiddleSeat(`11C`));
+// // console.log(checkMiddleSeat(`3E`));
+// console.log(typeof new String(`Jonas`));
+
+// console.log(airline.toLowerCase());
+// console.log(`Jonas`.toUpperCase());
+
+// // Fix Capitalization in name
+// const passenger = `jOnAS`;
+// const passLower = passenger.toLowerCase();
+// const passCorrect = passLower[0].toUpperCase() + passLower.slice(1);
+// console.log(passCorrect);
+
+// // compare email
+
+// const email = `hello@jonas.io`;
+// const loginEmail = `   Hello@Jonas.Io \n`;
+// const lowerLoginEmail = loginEmail.toLowerCase().trim();
+// console.log(lowerLoginEmail);
+
+// ``.trimStart();
+// ``.trimEnd();
+
+// const priceGB = `288,97€`;
+
+// const priceUS = priceGB.replace(`€`, `$`).replace(`,`, `.`);
+// console.log(priceUS);
+
+// const announce = `All passengers come to Boarding door 23, Boarding door 23!`;
+// console.log(announce.replace(`door`, `Gate`)); // only replaces first appearance
+
+// console.log(announce.replace(/door/g, `gate`)); // regex to traget all expressions
+
+// // Boolean functions
+// const plane1 = `Airbus320neo`;
+// console.log(plane1.includes(`A320`));
+// console.log(plane1.startsWith(`Airb`));
+
+// if (plane1.startsWith(`Airbus`) && plane1.endsWith(`neo`))
+//   console.log(`Part of new Airbus family`);
+
+// // Practice exercise
+
+// const checkBaggage = function (items) {
+//   const baggage = items.toLowerCase();
+//   if (baggage.includes(`knife`) || baggage.includes(`gun`))
+//     console.log(`You are NOT allowed on board`);
+//   else console.log(`Welcome aboard`);
+// };
+
+// checkBaggage(`I have a laptop, some Food and a pocket Knife`);
+// checkBaggage(`Socks and camera`);
+// checkBaggage(`Got some snacks and a gun for protection`);
+
+// console.log(`a+very+nice+string`.split(`+`));
+// console.log(`Prince Herenj`.split(` `));
+
+// const [firstName, lastName] = `Prince Herenj`.split(` `);
+
+// const newName = [`Mr.`, firstName, lastName.toUpperCase()].join(` `);
+// console.log(newName);
+
+// const capitalizaName = function (name) {
+//   const names = name.split(` `);
+//   const namesUpper = [];
+//   for (const n of names) {
+//     // namesUpper.push(n[0].toUpperCase() + n.slice(1));
+//     namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
+//   }
+//   console.log(namesUpper.join(` `));
+// };
+// capitalizaName(`jessica ann smith davis`);
+
+// // PADDING
+// const message = `Go to gate 23!`;
+// console.log(message.padStart(25, `+`).padEnd(30, `+`));
+// console.log(`Jonas`.padStart(25, `+`).padEnd(30, `+`));
+
+// // **** **** **** 0415
+
+// const maskCreditCard = function (number) {
+//   const str = number + ``;
+//   const l = str.length;
+//   const l4 = str.slice(l - 4);
+//   const padded = l4.padStart(l, `*`);
+//   console.log(padded);
+// };
+
+// maskCreditCard(`4337124912391234`);
+
+// // REPEAT
+// const message2 = `Bad weather.. All Departures Delayed... `;
+// console.log(message2.repeat(5));
+
+// const planesInLine = function (n) {
+//   console.log(`There are ${n} planes in line ${`✈️`.repeat(n)}`);
+// };
+
+// planesInLine(5);
+// planesInLine(3);
+// planesInLine(12);
+
+const flights =
+  '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
+
+for (const flight of flights.split(`+`)) {
+  let [desc, start, end, time] = flight.split(`;`);
+  desc = desc.slice(1).split(`_`);
+  desc = desc.join(` `);
+  start = start.slice(0, 3).toUpperCase();
+  end = end.slice(0, 3).toUpperCase();
+  const [hour, mins] = time.split(`:`);
+  time = `(${hour}h${mins})`;
+  console.log(
+    `${
+      desc.includes(`Delayed`) ? `🔴`.concat(desc) : desc
+    } from ${start} to ${end} ${time}`.padStart(40)
+  );
 }

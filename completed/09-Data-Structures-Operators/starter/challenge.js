@@ -110,3 +110,66 @@ const game = {
 //   add to scorers object with name and goals pair
 //   for every scorer, if goals == 0, set to 1, else goals++
 // */
+
+// const gameEvents = new Map([
+//   [17, '⚽ GOAL'],
+//   [36, '🔀 Substitution'],
+//   [47, '⚽ GOAL'],
+//   [61, '🔀 Substitution'],
+//   [64, '🟨 Yellow card'],
+//   [69, '🟥 Red card'],
+//   [70, '🔀 Substitution'],
+//   [72, '🔀 Substitution'],
+//   [76, '⚽ GOAL'],
+//   [80, '⚽ GOAL'],
+//   [92, '🟨 Yellow card'],
+// ]);
+
+// // CODING CHALLENGE 3
+
+// // 1.
+// const events = new Set(gameEvents.values());
+// console.log(events);
+
+// // 2.
+// gameEvents.delete(64);
+// console.log(gameEvents);
+
+// // 3.
+// console.log(
+//   `An event happened, on average, every ${90 / gameEvents.size} minutes`
+// );
+
+// // 4.
+// for (const [time, event] of gameEvents) {
+//   console.log(
+//     `${time < 45 ? `[FIRST HALF]` : `[SECOND HALF]`} ${time}: ${event}`
+//   );
+// }
+
+// // CHALLENGE 4
+// document.body.append(document.createElement('textarea'));
+// document.body.append(document.createElement('button'));
+
+// function toCamelCaseTrim(string) {
+//   let out = [];
+//   string = string.toLowerCase().split(`_`);
+//   out.push(string[0].trim());
+//   for (let i = 1; i < string.length; i++) {
+//     out.push(string[i][0].toUpperCase() + string[i].slice(1).trim());
+//   }
+//   out = out.join(``);
+//   return out;
+// }
+
+// document.querySelector(`button`).addEventListener(`click`, function () {
+//   const text = document.querySelector(`textarea`).value;
+//   const splitText = text.split(`\n`);
+//   const arrFin = [];
+//   for (const i of splitText) {
+//     arrFin.push(toCamelCaseTrim(i));
+//   }
+//   for (const [i, el] of arrFin.entries()) {
+//     console.log(el.padEnd(20) + `✅`.repeat(i + 1) + `\n`);
+//   }
+// });
