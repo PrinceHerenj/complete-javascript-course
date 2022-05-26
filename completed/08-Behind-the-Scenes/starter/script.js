@@ -1,5 +1,7 @@
 'use strict';
 
+// // SCOPING IN PRACTICE
+
 // function caclAge(birthYear) {
 //   const age = 2022 - birthYear;
 //   function printAge() {
@@ -28,15 +30,15 @@
 // const firstName = 'Prince';
 // caclAge(1985);
 
-// Hoisting Practice
+// HOISTING PRACTICE
 
 // console.log(me);
 // console.log(job);
 // console.log(year);
 
-// var me = `Jonas`;
-// let job = `teacher`;
-// const year = 1991;
+// var me = `Jonas`; hoisted to top as undefined
+// let job = `teacher`; not hoisted
+// const year = 1991; not hoisted
 
 // console.log(addDecl(1, 3));
 // console.log(addExpr(1, 3));
@@ -44,7 +46,7 @@
 
 // function addDecl(a, b) {
 //   return a + b;
-// }
+// } only declaration hosted to top
 
 // const addExpr = function (a, b) {
 //   return a + b;
@@ -61,6 +63,8 @@
 // function deleteShoppingCart() {
 //   console.log(`All products deleted!`);
 // }
+
+// // THIS KEYWORD
 
 // const jonas = {
 //   name: `Jonas`,
@@ -130,6 +134,8 @@
 // age = 31;
 // console.log(age, oldAge);
 
+// oldAge variable points to new memory location
+
 // const me = {
 //   name: 'person',
 //   age: 30,
@@ -137,6 +143,8 @@
 
 // const friend = me;
 // friend.age = 27;
+
+// here friend referes to the same me object, since objects are of reference type
 
 // const friends = new Array();
 
