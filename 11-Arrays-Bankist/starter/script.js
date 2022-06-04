@@ -134,21 +134,95 @@ const inputClosePin = document.querySelector('.form__input--pin');
 
 /////////////////////////////////////////////////
 
-// MAP
-const currencies = new Map([
-  ['USD', 'United States dollar'],
-  ['EUR', 'Euro'],
-  ['GBP', 'Pound sterling'],
-]);
+// // MAP
+// const currencies = new Map([
+//   ['USD', 'United States dollar'],
+//   ['EUR', 'Euro'],
+//   ['GBP', 'Pound sterling'],
+// ]);
 
-currencies.forEach(function (val, key) {
-  console.log(`${key}: ${val}`);
-});
+// currencies.forEach(function (val, key) {
+//   console.log(`${key}: ${val}`);
+// });
 
-const currenciesUnique = new Set([`USD`, `GBP`, `USD`, `EUR`, `EUR`]);
-console.log(currenciesUnique);
-currenciesUnique.forEach(function (val, _val) {
-  console.log(`${_val}: ${val}`);
-});
+// const currenciesUnique = new Set([`USD`, `GBP`, `USD`, `EUR`, `EUR`]);
+// console.log(currenciesUnique);
+// currenciesUnique.forEach(function (val, _val) {
+//   console.log(`${_val}: ${val}`);
+// });
 
 // _val is throwaway variable
+
+/////////////////////////////////////////////////
+// const displayMovements = function (movements) {
+//   containerMovements.innerHTML = '';
+//   movements.forEach(function (mov, i) {
+//     const type = mov > 0 ? 'deposit' : 'withdrawal';
+//     const html = `<div class="movements__row">
+//     <div class="movements__type movements__type--${type}">${i + 1} ${type}</div>
+//     <div class="movements__date">3 days ago</div>
+//     <div class="movements__value">${mov}€</div>
+//   </div>`;
+//     containerMovements.insertAdjacentHTML('afterbegin', html);
+//   });
+// };
+
+// displayMovements(account1.movements);
+
+// /////////////////////////////////////////////////
+
+// // map(), filter(), reduce()
+
+// // map(); // returns new array similar to forEach after executing callback function for every source element
+
+// const eurToUsd = 1.1;
+
+const mvs = account1.movements.slice();
+// const movementsUSD = mvs.map(mov => Number((mov * eurToUsd).toFixed(2))); // functional programming
+// console.log(mvs);
+// console.log(movementsUSD);
+
+// // const movementsUSDfor = [];
+// // for (const mov of mvs) {
+// //   movementsUSDfor.push(mov * eurToUsd);
+// // }
+
+// // console.log(movementsUSDfor);
+
+// const movementDesc = mvs.map(
+//   (mov, i) =>
+//     `Movement ${i + 1}: You ${mov > 0 ? 'Deposited' : 'Withdrew'} ${Math.abs(
+//       mov
+//     )}`
+// );
+
+// console.log(movementDesc);
+
+// const user = 'Steven Thomas William'; // stw
+// const createUsernames = function (accs) {
+//   accs.forEach(acc => {
+//     acc.username = acc.owner
+//       .toLowerCase()
+//       .split(' ')
+//       .map(name => name.at(0))
+//       .join('');
+//   });
+// };
+
+// createUsernames(accounts);
+
+/////////////////////////////////////////////////
+// // FILTER()
+const deposits = mvs.filter(function (mov) {
+  return mov > 0;
+});
+console.log(deposits);
+
+const depositsFor = [];
+for (const mov of mvs) {
+  if (mov > 0) depositsFor.push(mov);
+}
+console.log(depositsFor);
+
+const withdrawals = mvs.filter(mov => mov < 0);
+console.log(withdrawals);
