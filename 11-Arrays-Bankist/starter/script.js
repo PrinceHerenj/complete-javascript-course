@@ -61,6 +61,84 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
+const displayMovements = function (movements) {
+  containerMovements.innerHTML = '';
+  movements.forEach(function (mov, i) {
+    const type = mov > 0 ? 'deposit' : 'withdrawal';
+    const html = `<div class="movements__row">
+    <div class="movements__type movements__type--${type}">${i + 1} ${type}</div>
+    <div class="movements__date">3 days ago</div>
+    <div class="movements__value">${mov}€</div>
+  </div>`;
+    containerMovements.insertAdjacentHTML('afterbegin', html);
+  });
+};
+
+const calcPrintBalance = function (movements) {
+  const balance = movements.reduce((acc, mov) => acc + mov);
+  labelBalance.textContent = `${balance}€`;
+};
+
+const calcDisplaySummary = function (acc) {
+  const incomes = acc.movements
+    .filter(mov => mov > 0)
+    .reduce((acc, mov) => acc + mov, 0);
+  labelSumIn.textContent = `${incomes}€`;
+
+  const out = acc.movements
+    .filter(mov => mov < 0)
+    .reduce((acc, mov) => acc + mov, 0);
+  labelSumOut.textContent = `${Math.abs(out)}€`;
+
+  const interest = acc.movements
+    .filter(mov => mov > 0)
+    .map(dep => (dep * acc.interestRate) / 100)
+    .filter((int, i, arr) => int >= 1)
+    .reduce((acc, intr) => acc + intr, 0);
+  labelSumInterest.textContent = `${interest}€`;
+};
+
+const createUsernames = function (accs) {
+  accs.forEach(acc => {
+    acc.username = acc.owner
+      .toLowerCase()
+      .split(' ')
+      .map(name => name.at(0))
+      .join('');
+  });
+};
+
+createUsernames(accounts);
+
+// Event Handler
+let currentAccount;
+btnLogin.addEventListener('click', function (e) {
+  // prevent form from submitting
+  e.preventDefault();
+  currentAccount = accounts.find(
+    acc => acc.username === inputLoginUsername.value
+  );
+  // console.log(currentAccount);
+  if (currentAccount?.pin === Number(inputLoginPin.value)) {
+    // DISPLAY UI and Message
+    labelWelcome.textContent = `Welcome back, ${
+      currentAccount.owner.split(' ')[0]
+    }`;
+    containerApp.style.opacity = 100;
+
+    // Clear Input Fields
+    inputLoginPin.value = inputLoginUsername.value = '';
+    inputLoginPin.blur();
+
+    // Display movements
+    displayMovements(currentAccount.movements);
+    // Display balance
+    calcPrintBalance(currentAccount.movements);
+    // display summary
+    calcDisplaySummary(currentAccount);
+  }
+});
+
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
@@ -154,20 +232,6 @@ const inputClosePin = document.querySelector('.form__input--pin');
 // _val is throwaway variable
 
 /////////////////////////////////////////////////
-// const displayMovements = function (movements) {
-//   containerMovements.innerHTML = '';
-//   movements.forEach(function (mov, i) {
-//     const type = mov > 0 ? 'deposit' : 'withdrawal';
-//     const html = `<div class="movements__row">
-//     <div class="movements__type movements__type--${type}">${i + 1} ${type}</div>
-//     <div class="movements__date">3 days ago</div>
-//     <div class="movements__value">${mov}€</div>
-//   </div>`;
-//     containerMovements.insertAdjacentHTML('afterbegin', html);
-//   });
-// };
-
-// displayMovements(account1.movements);
 
 // /////////////////////////////////////////////////
 
@@ -175,7 +239,7 @@ const inputClosePin = document.querySelector('.form__input--pin');
 
 // // map(); // returns new array similar to forEach after executing callback function for every source element
 
-// const eurToUsd = 1.1;
+const eurToUsd = 1.1;
 
 const mvs = account1.movements.slice();
 // const movementsUSD = mvs.map(mov => Number((mov * eurToUsd).toFixed(2))); // functional programming
@@ -199,30 +263,62 @@ const mvs = account1.movements.slice();
 // console.log(movementDesc);
 
 // const user = 'Steven Thomas William'; // stw
-// const createUsernames = function (accs) {
-//   accs.forEach(acc => {
-//     acc.username = acc.owner
-//       .toLowerCase()
-//       .split(' ')
-//       .map(name => name.at(0))
-//       .join('');
-//   });
-// };
-
-// createUsernames(accounts);
 
 /////////////////////////////////////////////////
 // // FILTER()
-const deposits = mvs.filter(function (mov) {
-  return mov > 0;
-});
-console.log(deposits);
+// const deposits = mvs.filter(function (mov) {
+//   return mov > 0;
+// });
+// console.log(deposits);
 
-const depositsFor = [];
-for (const mov of mvs) {
-  if (mov > 0) depositsFor.push(mov);
-}
-console.log(depositsFor);
+// const depositsFor = [];
+// for (const mov of mvs) {
+//   if (mov > 0) depositsFor.push(mov);
+// }
+// console.log(depositsFor);
 
-const withdrawals = mvs.filter(mov => mov < 0);
-console.log(withdrawals);
+// const withdrawals = mvs.filter(mov => mov < 0);
+// console.log(withdrawals);
+
+/////////////////////////////////////////////////
+// REDUCE()
+// acc is accumulator -> SNOWBALL
+// const balance = mvs.reduce(function (acc, cur, i) {
+//   console.log(`Iteration ${i}: ${acc}+ ${cur}`);
+//   return acc + cur;
+// }, 0);
+
+// console.log(balance);
+
+// let bal2 = 0;
+// for (const mov of mvs) {
+//   bal2 += mov;
+// }
+// console.log(bal2);
+
+// const bal = mvs.reduce((acc, cur) => acc + cur);
+// console.log(bal);
+
+// // Maximum value
+// const max = mvs.reduce((acc, cur) => (cur > acc ? cur : acc));
+// console.log(max);
+
+// // PIPELINE: Method Chaining
+// const totalDepUSD = mvs
+//   .filter(mov => mov > 0)
+//   .map(mov => mov * eurToUsd)
+//   .reduce((acc, cur) => acc + cur, 0);
+// console.log(totalDepUSD);
+
+// don't overuse chaining; don't use chaining with mutating arrays
+
+/////////////////////////////////////////////////
+// // FIND()
+// console.log(mvs.find(mov => mov < 0));
+// console.log(accounts);
+// const acc = accounts.find(acc => acc.owner === 'Jessica Davis');
+// console.log(acc);
+
+// for (const acc1 of accounts) {
+//   if (acc1.owner === 'Jessica Davis') console.log(acc1);
+// }
