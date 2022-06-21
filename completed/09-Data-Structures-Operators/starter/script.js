@@ -430,6 +430,7 @@ const restaurant = {
 
 // // OBJECT TO MAP CONVERT
 // const hoursMap = new Map(Object.entries(restaurant.openingHours));
+// console.log(Object.entries(restaurant.categories));
 
 // // ITERATION
 // // QUIZ APP
@@ -581,20 +582,20 @@ const restaurant = {
 // planesInLine(3);
 // planesInLine(12);
 
-const flights =
-  '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
+// const flights =
+//   '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
 
-for (const flight of flights.split(`+`)) {
-  let [desc, start, end, time] = flight.split(`;`);
-  desc = desc.slice(1).split(`_`);
-  desc = desc.join(` `);
-  start = start.slice(0, 3).toUpperCase();
-  end = end.slice(0, 3).toUpperCase();
-  const [hour, mins] = time.split(`:`);
-  time = `(${hour}h${mins})`;
-  console.log(
-    `${
-      desc.includes(`Delayed`) ? `🔴`.concat(desc) : desc
-    } from ${start} to ${end} ${time}`.padStart(40)
-  );
-}
+// for (const flight of flights.split(`+`)) {
+//   let [desc, start, end, time] = flight.split(`;`);
+//   desc = desc.slice(1).split(`_`);
+//   desc = desc.join(` `);
+//   start = start.slice(0, 3).toUpperCase();
+//   end = end.slice(0, 3).toUpperCase();
+//   const [hour, mins] = time.split(`:`);
+//   time = `(${hour}h${mins})`;
+//   console.log(
+//     `${
+//       desc.includes(`Delayed`) ? `🔴`.concat(desc) : desc
+//     } from ${start} to ${end} ${time}`.padStart(40)
+//   );
+// }
