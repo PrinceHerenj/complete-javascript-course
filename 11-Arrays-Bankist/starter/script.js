@@ -237,11 +237,13 @@ btnClose.addEventListener('click', function (e) {
 // // FOR EACH
 // const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 // for (const movement of movements) { // OR
-// for(const [index, movement] of movements.entries()) {
-
-//   if (movement > 0) console.log(`Movement ${i+1}: You deposited ${movement}`);
-//   else console.log(`Movement ${i+1}: You withdrew ${Math.abs(movement)}`);
+// for (const [i, movement] of movements.entries()) {
+//   if (movement > 0) console.log(`Movement ${i + 1}: You deposited ${movement}`);
+//   else console.log(`Movement ${i + 1}: You withdrew ${Math.abs(movement)}`);
 // }
+
+// FOR OF LOOP has [index, variable] structure
+// FOR EACH LOOP has (variable, index, array) structure
 
 // movements.forEach(movement => {
 //   if (movement > 0) console.log(`You deposited ${movement}`);
@@ -284,7 +286,7 @@ btnClose.addEventListener('click', function (e) {
 
 // // map(); // returns new array similar to forEach after executing callback function for every source element
 
-const eurToUsd = 1.1;
+// const eurToUsd = 1.1;
 
 const mvs = account1.movements.slice();
 // const movementsUSD = mvs.map(mov => Number((mov * eurToUsd).toFixed(2))); // functional programming
@@ -311,10 +313,10 @@ const mvs = account1.movements.slice();
 
 /////////////////////////////////////////////////
 // // FILTER()
-// const deposits = mvs.filter(function (mov) {
-//   return mov > 0;
-// });
-// console.log(deposits);
+const deposits = mvs.filter(function (mov) {
+  return mov > 0;
+});
+console.log(deposits);
 
 // const depositsFor = [];
 // for (const mov of mvs) {
