@@ -41,12 +41,12 @@
 // const year = 1991; not hoisted
 
 // console.log(addDecl(1, 3));
-// console.log(addExpr(1, 3));
-// console.log(addArrow(1, 3));
+// // console.log(addExpr(1, 3));
+// // console.log(addArrow(1, 3));
 
 // function addDecl(a, b) {
 //   return a + b;
-// } only declaration hosted to top
+// } // only declaration hosted to top
 
 // const addExpr = function (a, b) {
 //   return a + b;
