@@ -183,7 +183,7 @@ const sectionObserver = new IntersectionObserver(revealSection, {
 
 allSections.forEach(function (section) {
   sectionObserver.observe(section);
-  // section.classList.add('section--hidden');
+  section.classList.add('section--hidden');
 });
 
 // // Lazy loading images
@@ -226,6 +226,7 @@ const slider = function () {
 
   // 0%, 100%, 200%, 300%
 
+  // Functions
   const createDots = function () {
     slides.forEach(function (_, i) {
       dotContainer.insertAdjacentHTML(
@@ -235,7 +236,6 @@ const slider = function () {
     });
   };
 
-  // Functions
   const activateDot = function (slide) {
     document
       .querySelectorAll('.dots__dot')
@@ -298,6 +298,7 @@ const slider = function () {
   });
 };
 slider();
+
 // // Selecting, Creating and Deleting Elements
 // // console.log(document.documentElement);
 // // console.log(document.head);
@@ -528,3 +529,7 @@ slider();
 // });
 
 // // Script Loading
+
+// <script src="script.js"/>
+// <script async src="script.js"/>
+// <script defer src="script.js"/>
