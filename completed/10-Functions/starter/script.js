@@ -175,6 +175,8 @@
 // book.call(eurowings, 23, `Sarah Williams`);
 // // console.log(eurowings);
 
+// the call method on any method assigns 'this' to first argument
+
 // book.call(lufthansa, 239, `Mary Cooper`);
 // // console.log(lufthansa);
 
