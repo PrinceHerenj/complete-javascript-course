@@ -1,7 +1,5 @@
-class Car {
-  constructor(str) {
-    let [make, , , speed] = str.split(' ');
-    make = make.slice(1, make.length - 1);
+class CarCl {
+  constructor(make, speed) {
     this.make = make;
     this.speed = +speed;
     console.log(`Initially '${this.make}' going at ${this.speed} km/h`);
@@ -26,6 +24,6 @@ class Car {
   }
 }
 
-const c1 = new Car("'Ford' going at 120 km/h");
+const c1 = new CarCl("'Ford' going at 120 km/h");
 c1.speedUS = 30;
 console.log(c1, c1.speedUS);
