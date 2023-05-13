@@ -1,6 +1,6 @@
-const country = 'India'
-const continent = 'Asia'
-let population = 138
+const country = 'India';
+const continent = 'Asia';
+let population = 138;
 // let population =  49
 
 // console.log(country)
@@ -15,7 +15,7 @@ let population = 138
 // console.log(country)
 // console.log(language)
 
-const language = 'Hindi'
+const language = 'Hindi';
 // const language = 'English'
 
 // console.log(population / 2)
@@ -62,7 +62,6 @@ const language = 'Hindi'
 // console.log(Boolean(undefined))
 // console.log(Boolean(null))
 // console.log(Boolean(NaN))
-
 
 // let money = 0;
 
