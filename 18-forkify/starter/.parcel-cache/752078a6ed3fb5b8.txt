@@ -1,16 +1,14 @@
-9536
-89/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/index.e37f48ea.js.map1698998693117860132 0
-86/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/index.628a78b8.css1698998781687860462 0
-86/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/icons.dfd7a6db.svg1698998242627876015 0
-97/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/index.runtime.32d13abc.js.map1698998781687860462 0
-75/home/prince/dev/complete-javascript-course/18-forkify/starter/package.json1698650186538085428 0
+9532
+86/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/index.628a78b8.css1699522623312092897 0
+75/home/prince/dev/complete-javascript-course/18-forkify/starter/package.json1699522593432100591 0
 91/home/prince/dev/complete-javascript-course/18-forkify/starter/src/sass/_searchResults.scss1698650186538085428 0
 88/home/prince/dev/complete-javascript-course/18-forkify/starter/src/sass/_components.scss1698650186538085428 0
 84/home/prince/dev/complete-javascript-course/18-forkify/starter/src/sass/_recipe.scss1698650186538085428 0
 71/home/prince/dev/complete-javascript-course/18-forkify/starter/src/sass1698650186538085428 1
+92/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/views/addRecipeView.js1699452482585808309 0
 89/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/views/searchView.js1698917393444106390 0
-89/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/views/recipeView.js1698918142803924994 0
-78/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/model.js1698998555277862924 0
+89/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/views/recipeView.js1699453792455727196 0
+78/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/model.js1699454443275691502 0
 79/home/prince/dev/complete-javascript-course/18-forkify/starter/src/img/logo.png1698650186538085428 0
 96/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/parse-json/readme.md1698650186498085436 0
 94/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/parse-json/license1698650186498085436 0
@@ -344,7 +342,6 @@
 105/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/css-tree/lib/parser/create.js1698650186358085471 0
 104/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/css-tree/lib/parser/index.js1698650186358085471 0
 105/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/css-tree/lib/walker/create.js1698650186358085471 0
-89/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/index.f6eefb5a.js.map1698998781687860462 0
 104/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/css-tree/lib/walker/index.js1698650186358085471 0
 95/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/css-tree/lib/walker1698650186358085471 1
 88/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/css-tree/lib1698650186358085471 1
@@ -533,7 +530,6 @@
 123/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/css-select/node_modules/domutils/lib/feeds.d.ts1698650186338085476 0
 124/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/css-select/node_modules/domutils/lib/querying.js1698650186338085476 0
 123/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/css-select/node_modules/domutils/lib/index.d.ts1698650186338085476 0
-88/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/favicon.8b2f57bf.png1698998242497876016 0
 130/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/css-select/node_modules/domutils/lib/manipulation.d.ts1698650186338085476 0
 142/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/css-select/node_modules/entities/lib/esm/decode_codepoint.d.ts.map1698650186338085476 0
 127/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/css-select/node_modules/domutils/lib/helpers.js.map1698650186338085476 0
@@ -634,7 +630,7 @@
 88/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/is-json/test1698650186398085460 1
 83/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/is-json1698650186398085460 1
 94/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/has-flag/readme.md1698650186388085464 0
-85/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/logo.833dfef5.png1698998781117860357 0
+85/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/logo.833dfef5.png1699522623052092964 0
 97/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/has-flag/package.json1698650186388085464 0
 93/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/has-flag/index.js1698650186388085464 0
 84/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/has-flag1698650186388085464 1
@@ -815,7 +811,7 @@
 113/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/electron-to-chromium/full-versions.js1698650186378085465 0
 94/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/is-extglob/LICENSE1698650186398085460 0
 97/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/boolbase/package.json1698650186218085503 0
-94/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/.package-lock.json1698650962837853598 0
+94/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/.package-lock.json1699522593522100567 0
 93/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/boolbase/index.js1698650186218085503 0
 84/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/boolbase1698650186218085503 1
 95/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/json5/dist/index.js1698650186398085460 0
@@ -1149,7 +1145,7 @@
 111/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/instance/group-by.js1698650186258085495 0
 113/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/instance/trim-start.js1698650186258085495 0
 112/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/instance/trim-left.js1698650186258085495 0
-80/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/helpers.js1698914144614911555 0
+80/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/helpers.js1699453289605763020 0
 99/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@lezer/common/README.md1698650184978085861 0
 110/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/instance/reverse.js1698650186258085495 0
 110/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/instance/pad-end.js1698650186258085495 0
@@ -1206,6 +1202,7 @@
 103/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/domelementtype/package.json1698650186378085465 0
 120/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/reflect/prevent-extensions.js1698650186258085495 0
 115/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/reflect/is-extensible.js1698650186258085495 0
+93/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/index.runtime.8ca14d9a.js1699522623312092897 0
 110/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/reflect/own-keys.js1698650186258085495 0
 105/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/reflect/has.js1698650186258085495 0
 98/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/reflect1698650186258085495 1
@@ -1220,7 +1217,6 @@
 111/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/iterator/flat-map.js1698650186258085495 0
 107/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/iterator/from.js1698650186258085495 0
 106/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/iterator/map.js1698650186258085495 0
-86/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/icons.21bad73c.svg1698998242627876015 0
 110/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/iterator/dispose.js1698650186258085495 0
 107/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/iterator/take.js1698650186258085495 0
 99/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/iterator1698650186258085495 1
@@ -1359,6 +1355,7 @@
 112/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/proposals/async-iteration.js1698650186318085479 0
 107/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/proposals/array-last.js1698650186318085479 0
 129/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/proposals/object-getownpropertydescriptors.js1698650186318085479 0
+92/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/views/bookmarksView.js1699342907126152569 0
 110/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/css-what/lib/es/stringify.d.ts.map1698650186358085471 0
 104/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/array/some.js1698650186258085495 0
 113/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/proposals/object-iteration.js1698650186318085479 0
@@ -1597,7 +1594,6 @@
 108/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/modules/es.array.flat.js1698650186308085483 0
 118/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/modules/es.typed-array.subarray.js1698650186318085479 0
 113/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/modules/es.array.to-sorted.js1698650186308085483 0
-93/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/index.runtime.32d13abc.js1698998781687860462 0
 113/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/modules/es.promise.finally.js1698650186308085483 0
 102/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/css-tree/lib/data-patch.js1698650186348085472 0
 119/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/modules/es.typed-array.to-sorted.js1698650186318085479 0
@@ -1700,7 +1696,7 @@
 128/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/css-select/lib/esm/pseudo-selectors/aliases.d.ts.map1698650186338085476 0
 114/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/modules/es.typed-array.join.js1698650186318085479 0
 121/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/modules/esnext.async-iterator.from.js1698650186318085479 0
-88/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/favicon.42656662.png1698998780937860322 0
+88/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/favicon.42656662.png1699522622782093033 0
 114/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/modules/es.object.is-frozen.js1698650186308085483 0
 148/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/node-gyp-build-optional-packages/node_modules/detect-libc/lib/process.js1698650186498085436 0
 124/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/proposals/efficient-64-bit-arithmetic.js1698650186318085479 0
@@ -2209,7 +2205,6 @@
 111/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/internals/iterators-core.js1698650186308085483 0
 117/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/features/number/to-exponential.js1698650186278085489 0
 114/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/features/number/parse-float.js1698650186278085489 0
-90/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/index.f7626f62.css.map1698998242517876016 0
 114/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/features/number/from-string.js1698650186278085489 0
 108/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/features/number/index.js1698650186278085489 0
 114/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/features/number/constructor.js1698650186278085489 0
@@ -2661,7 +2656,6 @@
 116/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/full/string/virtual/pad-start.js1698650186298085484 0
 106/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/internals/not-a-nan.js1698650186308085483 0
 117/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/full/string/virtual/trim-start.js1698650186298085484 0
-85/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/logo.726d37a8.png1698998242587876015 0
 123/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/modules/esnext.string.is-well-formed.js1698650186318085479 0
 112/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/full/string/virtual/blink.js1698650186298085484 0
 120/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/full/string/virtual/code-point-at.js1698650186298085484 0
@@ -3193,7 +3187,7 @@
 99/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/semver/functions/neq.js1698650186528085430 0
 107/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/features/is-iterable.js1698650186278085489 0
 103/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/utils/src/is-url.js1698650185788085609 0
-83/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/controller.js1698998586587863933 0
+83/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/controller.js1699453148425766571 0
 117/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/stable/typed-array/int16-array.js1698650186328085477 0
 107/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/caniuse-lite/data/regions/BR.js1698650186238085500 0
 104/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/utils/src/urlJoin.js1698650185788085609 0
@@ -3736,6 +3730,7 @@
 125/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/package-manager/src/promiseFromProcess.js1698650185068085833 0
 114/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/modules/esnext.math.degrees.js1698650186318085479 0
 113/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/csso/node_modules/css-tree/lib/parser1698650186368085467 1
+93/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/views/paginationView.js1699424935186558481 0
 99/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/css-select/package.json1698650186348085472 0
 103/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/stable/url/index.js1698650186328085477 0
 113/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/package-manager/test/fixtures1698650185068085833 1
@@ -3871,7 +3866,7 @@
 127/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/workers/test/integration/workerfarm/echo.js1698650185798085606 0
 110/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/caniuse-lite/data/features/webm.js1698650186238085500 0
 112/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/stable/date/to-gmt-string.js1698650186328085477 0
-81/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@lmdb1698650962747853624 1
+81/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@lmdb1699522593382100606 1
 115/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/full/array/virtual/unique-by.js1698650186288085488 0
 130/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/workers/test/integration/workerfarm/logging.js1698650185798085606 0
 101/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/utils/src/hash.js1698650185788085609 0
@@ -3893,7 +3888,7 @@
 90/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/immutable/dist1698650186398085460 1
 119/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/features/object/get-prototype-of.js1698650186278085489 0
 123/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/resolver-default/lib/DefaultResolver.js1698650185078085830 0
-86/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/icons.c14567a0.svg1698998781667860459 0
+86/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/icons.c14567a0.svg1699522623272092908 0
 114/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/core/src/public/BundleGraph.js1698650185018085849 0
 106/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/stable/regexp/split.js1698650186328085477 0
 110/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/package-manager/src/Npm.js1698650185068085833 0
@@ -4116,6 +4111,7 @@
 107/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/caniuse-lite/data/regions/MK.js1698650186248085496 0
 103/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/type-fest/source/entry.d.ts1698650186538085428 0
 118/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/packager-js/src/ESMOutputFormat.js1698650185068085833 0
+85/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/index.cff25a0c.js1699522623312092897 0
 106/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/es/array/find-index.js1698650186268085491 0
 112/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/bundler-default/package.json1698650184998085856 0
 128/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/caniuse-lite/data/features/css-content-visibility.js1698650186228085501 0
@@ -4406,7 +4402,6 @@
 130/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/runtime-browser-hmr/src/loaders/hmr-runtime.js1698650185078085830 0
 100/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/glob-parent/CHANGELOG.md1698650186388085464 0
 103/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/events/src/types.js1698650185018085849 0
-85/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/index.f6eefb5a.js1698998781687860462 0
 145/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/node/Block.js1698650185048085838 0
 103/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/events/package.json1698650185018085849 0
 142/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/optimizer-svgo/node_modules/svgo/plugins/preset-default.js1698650185058085837 0
@@ -4528,7 +4523,7 @@
 104/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/stable/string/raw.js1698650186328085477 0
 99/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/workers/LICENSE1698650185798085606 0
 105/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@swc/helpers/esm/_ts_param.js1698650186218085503 0
-73/home/prince/dev/complete-javascript-course/18-forkify/starter/index.html1698918436513850530 0
+73/home/prince/dev/complete-javascript-course/18-forkify/starter/index.html1699432147536583929 0
 104/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/math/atanh.js1698650186258085495 0
 148/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/atrule/import.js1698650185048085838 0
 124/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@swc/helpers/src/_initializer_warning_helper.mjs1698650186218085503 0
@@ -4661,7 +4656,7 @@
 108/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@swc/helpers/_/_set_prototype_of1698650186208085507 1
 116/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/modules/esnext.symbol.matcher.js1698650186318085479 0
 141/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/parser/create.js1698650185048085838 0
-90/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/views/resultsView.js1698918211573908983 0
+90/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/views/resultsView.js1699341585776151308 0
 93/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/mdn-data/index.js1698650186488085440 0
 147/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/atrule/media.js1698650185048085838 0
 131/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/parser1698650185048085838 1
@@ -4680,6 +4675,7 @@
 151/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/syntax/node/AnPlusB.js1698650185028085845 0
 129/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/caniuse-lite/data/features/kerning-pairs-ligatures.js1698650186228085501 0
 150/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/optimizer-svgo/node_modules/svgo/plugins/convertEllipseToCircle.js1698650185058085837 0
+97/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/index.runtime.8ca14d9a.js.map1699522623312092897 0
 96/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/workers/test1698650185798085606 1
 146/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/optimizer-htmlnano/node_modules/svgo/plugins/removeMetadata.js1698650185048085838 0
 101/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/domhandler/lib/index.d.ts1698650186378085465 0
@@ -4916,7 +4912,7 @@
 102/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/es/symbol/match.js1698650186268085491 0
 105/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/internals/to-index.js1698650186308085483 0
 117/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/caniuse-lite/data/features/videotracks.js1698650186238085500 0
-80/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@swc1698650962747853624 1
+80/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@swc1699522593382100606 1
 97/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/web/README.md1698650186338085476 0
 119/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/features/array/virtual/to-sorted.js1698650186278085489 0
 140/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/workers/test/integration/workerfarm/master-process-id.js1698650185798085606 0
@@ -4942,7 +4938,7 @@
 102/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/stable/date/now.js1698650186328085477 0
 105/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/full/instance/sort.js1698650186288085488 0
 128/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/optimizer-svgo/node_modules/mdn-data/LICENSE1698650185058085837 0
-78/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/index.html1698998781687860462 0
+78/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/index.html1699522623312092897 0
 107/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/modules/es.math.tanh.js1698650186308085483 0
 110/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@swc/helpers/_/_is_native_function1698650186208085507 1
 107/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/csso/node_modules/mdn-data/l10n1698650186378085465 1
@@ -4954,7 +4950,7 @@
 106/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/source-map-js/lib/array-set.js1698650186528085430 0
 107/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/caniuse-lite/data/regions/GN.js1698650186238085500 0
 155/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/syntax/atrule/font-face.js1698650185028085845 0
-83/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/views/View.js1698918450743845678 0
+83/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/views/View.js1699521295832440370 0
 107/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/cosmiconfig/dist/index.d.ts.map1698650186338085476 0
 119/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/runtime-service-worker/package.json1698650185088085826 0
 105/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/fs/lib/browser.js.map1698650185028085845 0
@@ -5042,7 +5038,7 @@
 132/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/modules/es.object.get-own-property-descriptor.js1698650186308085483 0
 114/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@swc/helpers/_/_ts_values/package.json1698650186208085507 0
 108/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/full/number/parse-int.js1698650186298085484 0
-75/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/views1698916653574287522 1
+75/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/views1699424925136557618 1
 114/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/htmlnano/lib/modules/removeComments.js1698650186388085464 0
 160/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/optimizer-svgo/node_modules/css-select/lib/pseudo-selectors/pseudos.d.ts.map1698650185048085838 0
 116/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/source-map-js/lib/source-map-consumer.js1698650186528085430 0
@@ -5649,7 +5645,7 @@
 114/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/transformer-babel/src/utils.js1698650185778085611 0
 112/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/json/to-string-tag.js1698650186258085495 0
 105/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/stable/instance/at.js1698650186328085477 0
-62/home/prince/dev/complete-javascript-course/18-forkify/starter1698910906775695765 1
+62/home/prince/dev/complete-javascript-course/18-forkify/starter1699522622772093035 1
 99/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/csso/lib/clean/utils.js1698650186358085471 0
 102/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/es/array/splice.js1698650186268085491 0
 158/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/optimizer-htmlnano/node_modules/svgo/plugins/removeUselessStrokeAndFill.js1698650185048085838 0
@@ -6180,7 +6176,7 @@
 104/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/cache/src/FSCache.js1698650184998085856 0
 113/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@mischnic/json-sourcemap/package.json1698650184998085856 0
 103/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/stable/array/map.js1698650186328085477 0
-80/home/prince/dev/complete-javascript-course/18-forkify/starter/package-lock.json1698650962807853606 0
+80/home/prince/dev/complete-javascript-course/18-forkify/starter/package-lock.json1699522593492100574 0
 123/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/css-select/node_modules/domhandler/package.json1698650186338085476 0
 112/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/features/function/un-this.js1698650186278085489 0
 102/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/full/array/with.js1698650186288085488 0
@@ -6530,7 +6526,7 @@
 101/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/packager-html/lib1698650185068085833 1
 86/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/fs1698650185028085845 1
 94/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/fs/LICENSE1698650185018085849 0
-79/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/config.js1698998549737862938 0
+79/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/config.js1699452400315811584 0
 161/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/optimizer-htmlnano/node_modules/css-select/lib/pseudo-selectors/subselects.js1698650185028085845 0
 98/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/diagnostic/src1698650185018085849 1
 97/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/detect-libc/README.md1698650186378085465 0
@@ -6568,7 +6564,7 @@
 119/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/modules/es.aggregate-error.cause.js1698650186308085483 0
 106/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/full/regexp/dot-all.js1698650186298085484 0
 96/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/js-yaml/package.json1698650186398085460 0
-80/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/.bin1698650184978085861 1
+80/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/.bin1699522593382100606 1
 107/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/workers/lib/cpuCount.js1698650185798085606 0
 127/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/optimizer-htmlnano/src/HTMLNanoOptimizer.js1698650185048085838 0
 110/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/graph/lib/AdjacencyList.js1698650185028085845 0
@@ -6799,7 +6795,6 @@
 134/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/csso/node_modules/css-tree/cjs/syntax/node/Parentheses.cjs1698650186368085467 0
 117/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/caniuse-lite/data/features/canvas-text.js1698650186228085501 0
 119/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/caniuse-lite/data/features/notifications.js1698650186238085500 0
-85/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/index.e37f48ea.js1698998693107860132 0
 107/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/plugin/src/PluginAPI.js1698650185068085833 0
 103/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@swc/helpers/_/_ts_decorate1698650186208085507 1
 129/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/runtime-js/src/helpers/browser/html-loader.js1698650185078085830 0
@@ -7168,7 +7163,6 @@
 118/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@swc/helpers/_/_class_private_field_update1698650186208085507 1
 121/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/modules/esnext.promise.all-settled.js1698650186318085479 0
 122/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/csso/node_modules/css-tree/cjs/utils/clone.cjs1698650186368085467 0
-86/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/index.f7626f62.css1698998242517876016 0
 152/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/optimizer-htmlnano/node_modules/csso/lib/replace/atrule/keyframes.js1698650185038085842 0
 107/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/caniuse-lite/data/regions/ZA.js1698650186248085496 0
 113/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/full/data-view/get-float16.js1698650186288085488 0
@@ -7351,6 +7345,7 @@
 112/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/caniuse-lite/dist/unpacker/region.js1698650186248085496 0
 110/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/sass/types/legacy/plugin_this.d.ts1698650186518085431 0
 121/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/caniuse-lite/dist/unpacker/browserVersions.js1698650186248085496 0
+89/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/index.cff25a0c.js.map1699522623322092895 0
 94/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/timsort/LICENSE.md1698650186538085428 0
 105/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/es/string/iterator.js1698650186268085491 0
 114/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/caniuse-lite/dist/unpacker/browsers.js1698650186248085496 0
@@ -8247,7 +8242,7 @@
 104/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/es/json/stringify.js1698650186268085491 0
 109/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/electron-to-chromium/package.json1698650186378085465 0
 101/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/csso/cjs/clean/Atrule.cjs1698650186358085471 0
-90/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/index.628a78b8.css.map1698998781687860462 0
+90/home/prince/dev/complete-javascript-course/18-forkify/starter/dist/index.628a78b8.css.map1699522623322092895 0
 98/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@swc/counter/README.md1698650186198085508 0
 112/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@swc/helpers/esm/_read_only_error.js1698650186218085503 0
 99/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/csso/cjs/clean/Rule.cjs1698650186358085471 0
@@ -8338,7 +8333,7 @@
 134/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/csso/node_modules/css-tree/cjs/syntax/config/generator.cjs1698650186368085467 0
 118/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/csso/node_modules/css-tree/cjs/syntax/node1698650186368085467 1
 118/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/modules/esnext.math.deg-per-rad.js1698650186318085479 0
-93/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@msgpackr-extract1698650962747853624 1
+93/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@msgpackr-extract1699522593382100606 1
 140/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/csso/node_modules/css-tree/cjs/syntax/node/AttributeSelector.cjs1698650186368085467 0
 104/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/full/math/radians.js1698650186298085484 0
 130/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/csso/node_modules/css-tree/cjs/syntax/node/AnPlusB.cjs1698650186368085467 0
@@ -8357,7 +8352,7 @@
 112/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/instance/match-all.js1698650186258085495 0
 126/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/csso/node_modules/css-tree/cjs/syntax/node/CDC.cjs1698650186368085467 0
 117/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/caniuse-lite/data/features/sql-storage.js1698650186238085500 0
-75/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules1698650962747853624 1
+75/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules1699522593432100591 1
 134/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/csso/node_modules/css-tree/cjs/syntax/node/Declaration.cjs1698650186368085467 0
 106/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/full/symbol/replace.js1698650186298085484 0
 136/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/csso/node_modules/css-tree/cjs/syntax/node/ClassSelector.cjs1698650186368085467 0
@@ -8676,7 +8671,7 @@
 103/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/full/instance/at.js1698650186288085488 0
 107/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/source-map/lib/binary-search.js1698650186528085430 0
 132/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/csso/lib/restructure/prepare/createDeclarationIndexer.js1698650186358085471 0
-83/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel1698650962747853624 1
+83/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel1699522593382100606 1
 105/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/csso/lib/restructure/utils.js1698650186358085471 0
 90/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/csso/lib/clean1698650186358085471 1
 115/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/string/virtual/anchor.js1698650186258085495 0
@@ -9044,7 +9039,7 @@
 114/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/actual/number/virtual/index.js1698650186258085495 0
 111/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/transformer-js/package.json1698650185778085611 0
 102/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/full/math/log10.js1698650186298085484 0
-67/home/prince/dev/complete-javascript-course/18-forkify/starter/dist1698998781697860463 1
+67/home/prince/dev/complete-javascript-course/18-forkify/starter/dist1699522623322092895 1
 113/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/css-tree/cjs/syntax/node/Brackets.cjs1698650186348085472 0
 103/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/es/instance/bind.js1698650186268085491 0
 116/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/proposals/promise-all-settled.js1698650186318085479 0
@@ -9348,6 +9343,7 @@
 143/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/lexer/Lexer.js1698650185028085845 0
 112/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/full/symbol/to-string-tag.js1698650186298085484 0
 113/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/full/async-iterator/filter.js1698650186288085488 0
+90/home/prince/dev/complete-javascript-course/18-forkify/starter/src/js/views/previewView.js1699453892575719816 0
 97/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/posthtml/node_modules1698650186508085435 1
 99/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/csso/lib/clean/index.js1698650186358085471 0
 111/home/prince/dev/complete-javascript-course/18-forkify/starter/node_modules/core-js/full/async-iterator/from.js1698650186288085488 0
